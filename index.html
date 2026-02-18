@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibe Coding — строй, не объясняй</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- CANVAS BACKGROUND -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <a href="https://www.collinsdictionary.com/woty" target="_blank" class="hero__badge">
+      <span class="badge-dot"></span>
+      Слово года по версии Collins Dictionary 2025
+    </a>
+    <h1 class="hero__title">
+      <span class="gradient-text">Vibe</span><br />
+      <span class="hero__title-sub">Coding</span>
+    </h1>
+    <p class="hero__desc">
+      Ты описываешь — ИИ строит.<br />
+      Никакого синтаксиса. Никаких лет учёбы. Только идея и <a href="https://cursor.com" target="_blank" class="inline-link">Cursor</a>.
+    </p>
+    <a href="https://x.com/karpathy/status/1886192184808149383" target="_blank" class="hero__quote">
+      <span class="quote-mark">"</span>
+      Полностью отдайся вайбам, обними экспоненты и забудь, что код вообще существует.
+      <span class="quote-author">— Andrej Karpathy, OpenAI co-founder · оригинальный пост →</span>
+    </a>
+    <div class="hero__scroll-hint">
+      <span>скролл вниз</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- WHAT IS IT -->
+  <section class="what section" id="what">
+    <div class="container">
+      <div class="section-label">что это такое</div>
+      <h2 class="section-title">
+        Код без кода.<br />
+        <span class="gradient-text">Продукт с нуля за дни.</span>
+      </h2>
+      <div class="what__grid">
+        <div class="what__text">
+          <p>
+            Вайб-кодинг — это когда ты открываешь <a href="https://cursor.com" target="_blank" class="inline-link"><strong>Cursor</strong></a>, 
+            описываешь что хочешь по-человечески, и ИИ пишет весь код за тебя.
+            Ты итерируешь, направляешь, правишь — но не набираешь функции руками.
+          </p>
+          <p>
+            Это не «сгенерировать кнопку». Это — полноценные приложения, 
+            которые работают, принимают деньги, масштабируются.
+          </p>
+          <div class="what__tags">
+            <a href="https://www.typescriptlang.org/" target="_blank" class="tag">TypeScript</a>
+            <a href="https://react.dev/" target="_blank" class="tag">React</a>
+            <a href="https://supabase.com/" target="_blank" class="tag">Supabase</a>
+            <a href="https://vercel.com/" target="_blank" class="tag">Vercel</a>
+            <a href="https://cursor.com/" target="_blank" class="tag tag--active">Cursor</a>
+            <a href="https://claude.ai/" target="_blank" class="tag">Claude</a>
+          </div>
+        </div>
+        <div class="what__terminal">
+          <div class="terminal">
+            <div class="terminal__header">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <a href="https://cursor.com" target="_blank" class="terminal__title">cursor composer</a>
+            </div>
+            <div class="terminal__body">
+              <div class="terminal__line terminal__line--user">
+                <span class="terminal__prompt">you</span>
+                Сделай калькулятор доставки с тарифами по регионам и формой заявки
+              </div>
+              <div class="terminal__line terminal__line--ai" data-typewriter>
+                <span class="terminal__prompt terminal__prompt--ai">ai</span>
+                <span class="typewriter-text">Создаю компонент с региональными тарифами, валидацией и отправкой в Supabase...</span>
+              </div>
+              <div class="terminal__line terminal__line--code">
+                <span class="code-line"><span class="code-keyword">const</span> <span class="code-var">calculator</span> = <span class="code-fn">createApp</span>({</span>
+                <span class="code-line indent">regions: <span class="code-string">'RU, BY, KZ'</span>,</span>
+                <span class="code-line indent">auth: <span class="code-keyword">true</span>,</span>
+                <span class="code-line indent">payments: <span class="code-string">'stripe'</span></span>
+                <span class="code-line">})</span>
+              </div>
+              <div class="terminal__line terminal__line--success">
+                <span class="terminal__check">✓</span> Готово за 4 минуты
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGIN -->
+  <section class="origin section" id="origin">
+    <div class="container">
+      <div class="origin__date">2 февраля 2025</div>
+      <h2 class="section-title">
+        Один твит изменил<br />
+        <span class="gradient-text">то, как строят продукты</span>
+      </h2>
+      <div class="origin__tweet">
+        <a href="https://x.com/karpathy/status/1886192184808149383" target="_blank" class="tweet-card">
+          <div class="tweet-header">
+            <div class="tweet-avatar">AK</div>
+            <div class="tweet-user">
+              <strong>Andrej Karpathy</strong>
+              <span>@karpathy</span>
+            </div>
+            <div class="tweet-views">4.5M просмотров</div>
+          </div>
+          <div class="tweet-body">
+            There's a new kind of coding I call <strong>"vibe coding"</strong>, where you fully give in to the vibes, 
+            embrace exponentials, and forget that the code even exists. It's not about writing code anymore — 
+            it's about having conversations with AI and steering toward what you want.
+          </div>
+          <div class="tweet-footer">
+            <span>Фев 2, 2025</span>
+            <span>·</span>
+            <span>Читать оригинал →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section class="stories section" id="stories">
+    <div class="container">
+      <div class="section-label">реальные люди, реальные результаты</div>
+      <h2 class="section-title">
+        Они не умели кодить.<br />
+        <span class="gradient-text">Теперь у них работающий бизнес.</span>
+      </h2>
+      <div class="stories__grid">
+        <a href="https://www.sabrina.dev/p/vibe-coded-app-135k-revenue-1-week" target="_blank" class="story-card story-card--featured reveal">
+          <div class="story-card__tag">🔥 самый громкий кейс</div>
+          <div class="story-card__amount">$135 000</div>
+          <div class="story-card__period">за одну неделю</div>
+          <div class="story-card__title">SendPush.io</div>
+          <p class="story-card__desc">
+            SaaS для push-уведомлений через Apple/Google Wallet. Построен на вайб-кодинге. 
+            Запущен вебинар — $135k выручки за первую неделю.
+          </p>
+          <div class="story-card__by">Drew Griffin · вайб-кодер <span class="story-card__link">читать →</span></div>
+        </a>
+        <a href="https://ithoughthecamewithyou.com/post/vibe-coding-a-vibe-video-editor" target="_blank" class="story-card reveal" data-delay="100">
+          <div class="story-card__amount">1 день</div>
+          <div class="story-card__period">от идеи до продукта</div>
+          <div class="story-card__title">Vibe Video Editor</div>
+          <p class="story-card__desc">
+            AI видеоредактор прямо в браузере. Работает без бэкенда. 
+            GPT-4.1 + WebAssembly. Написан за один день.
+          </p>
+          <div class="story-card__by">Robert Ellison · один разработчик <span class="story-card__link">читать →</span></div>
+        </a>
+        <a href="https://www.indiehackers.com/post/tech/8-vibe-coders-who-are-building-real-saas-mvps-not-just-games-ItN5XsfrbQ2RCwawoIqn" target="_blank" class="story-card reveal" data-delay="200">
+          <div class="story-card__amount">£5 500</div>
+          <div class="story-card__period">в первый день продаж</div>
+          <div class="story-card__title">Контент-инструмент</div>
+          <p class="story-card__desc">
+            Инструмент для создания контента. 95% кода написано ИИ. 
+            Первый день: тысячи фунтов выручки без команды и венчура.
+          </p>
+          <div class="story-card__by">Indie Hacker · без команды <span class="story-card__link">читать →</span></div>
+        </a>
+        <a href="https://www.indiehackers.com/post/how-i-built-a-profitable-niche-saas-in-3-weeks-by-vibecoding-and-focusing-on-one-painful-problem-fcffcf116d" target="_blank" class="story-card reveal" data-delay="300">
+          <div class="story-card__amount">3 недели</div>
+          <div class="story-card__period">до первых платящих</div>
+          <div class="story-card__title">HireVue Game Prep</div>
+          <p class="story-card__desc">
+            Нишевая платформа для подготовки к геймифицированным HR-тестам. 
+            Один человек, узкая боль, платящие клиенты с первой недели.
+          </p>
+          <div class="story-card__by">Luca · без бэкграунда в разработке <span class="story-card__link">читать →</span></div>
+        </a>
+        <a href="https://www.indiehackers.com/post/tech/8-vibe-coders-who-are-building-real-saas-mvps-not-just-games-ItN5XsfrbQ2RCwawoIqn" target="_blank" class="story-card reveal" data-delay="400">
+          <div class="story-card__amount">2 дня</div>
+          <div class="story-card__period">до рабочего MVP</div>
+          <div class="story-card__title">Pentest Tool</div>
+          <p class="story-card__desc">
+            Инструмент для пентеста. Специалист по безопасности описал задачу — 
+            ИИ собрал инструмент. Экспертиза важнее синтаксиса.
+          </p>
+          <div class="story-card__by">Security Engineer · первый продукт <span class="story-card__link">читать →</span></div>
+        </a>
+        <div class="story-card story-card--more reveal" data-delay="500">
+          <div class="story-card__more-list">
+            <div class="more-item">📊 Аналитика трафика как живой город</div>
+            <div class="more-item">🍳 Голосовой сайт с рецептами</div>
+            <div class="more-item">📈 SEO ROI-калькулятор</div>
+            <div class="more-item">🔗 Платформа аффилиат-маркетинга</div>
+            <div class="more-item">🤖 Адаптивный конструктор форм с ИИ</div>
+          </div>
+          <a href="https://www.indiehackers.com/post/tech/8-vibe-coders-who-are-building-real-saas-mvps-not-just-games-ItN5XsfrbQ2RCwawoIqn" target="_blank" class="story-card__note">
+            все кейсы на Indie Hackers →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats section" id="stats">
+    <div class="container">
+      <div class="section-label">в цифрах</div>
+      <h2 class="section-title">
+        <span class="gradient-text">Это не тренд.</span><br />
+        Это новый способ строить.
+      </h2>
+      <div class="stats__grid">
+        <a href="https://www.secondtalent.com/resources/vibe-coding-statistics/" target="_blank" class="stat-card reveal">
+          <div class="stat-card__number" data-count="63">0</div>
+          <div class="stat-card__suffix">%</div>
+          <div class="stat-card__label">вайб-кодеров — не разработчики</div>
+          <div class="stat-card__sub">Second Talent Research · источник →</div>
+        </a>
+        <a href="https://www.secondtalent.com/resources/vibe-coding-statistics/" target="_blank" class="stat-card reveal" data-delay="100">
+          <div class="stat-card__number" data-count="51">0</div>
+          <div class="stat-card__suffix">%</div>
+          <div class="stat-card__label">быстрее выполняются задачи</div>
+          <div class="stat-card__sub">vs традиционная разработка · источник →</div>
+        </a>
+        <a href="https://www.innobu.com/vibecoding-dashboard/" target="_blank" class="stat-card reveal" data-delay="200">
+          <div class="stat-card__number" data-count="41">0</div>
+          <div class="stat-card__suffix">%</div>
+          <div class="stat-card__label">всего кода планеты написал ИИ</div>
+          <div class="stat-card__sub">256 млрд строк за 2024 · источник →</div>
+        </a>
+        <a href="https://www.innobu.com/vibecoding-dashboard/" target="_blank" class="stat-card reveal" data-delay="300">
+          <div class="stat-card__number" data-count="44">0</div>
+          <div class="stat-card__suffix">%</div>
+          <div class="stat-card__label">нетехнических фаундеров</div>
+          <div class="stat-card__sub">строят MVP сами · источник →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY YOU -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="section-label">парадокс вайб-кодинга</div>
+      <h2 class="section-title">
+        Технарь без опыта в веб<br />
+        <span class="gradient-text">взлетает быстрее джуна</span>
+      </h2>
+      <p class="section-desc">
+        Вайб-кодинг вознаграждает не «знание фреймворка» — а инженерные привычки.
+        Если ты умеешь думать системно, ИИ становится твоим мультиплайером.
+      </p>
+      <div class="why__grid">
+        <div class="why-card reveal">
+          <div class="why-card__icon">🧩</div>
+          <h3>Декомпозиция</h3>
+          <p>Разбить задачу на части — это и есть промптинг. Ты уже умеешь.</p>
+        </div>
+        <div class="why-card reveal" data-delay="100">
+          <div class="why-card__icon">⚙️</div>
+          <h3>Работа с ограничениями</h3>
+          <p>Понимать, где система сломается — это ценнее любого синтаксиса.</p>
+        </div>
+        <div class="why-card reveal" data-delay="200">
+          <div class="why-card__icon">🔬</div>
+          <h3>Проверяемость</h3>
+          <p>«Как я пойму, что работает?» — этот вопрос отличает продукт от демо.</p>
+        </div>
+        <div class="why-card reveal" data-delay="300">
+          <div class="why-card__icon">🎯</div>
+          <h3>Точная постановка задачи</h3>
+          <p>ИИ так же хорош, как твой промпт. Точность мышления = качество продукта.</p>
+        </div>
+        <div class="why-card reveal" data-delay="400">
+          <div class="why-card__icon">🔗</div>
+          <h3>Системное мышление</h3>
+          <p>Видеть, как части соединяются — ИИ этого не придумает за тебя.</p>
+        </div>
+        <div class="why-card reveal" data-delay="500">
+          <div class="why-card__icon">💡</div>
+          <h3>Понимание домена</h3>
+          <p>Знаешь отрасль изнутри? Ты видишь боль, которую другие не замечают.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack section" id="stack">
+    <div class="container">
+      <div class="section-label">с чего начать</div>
+      <h2 class="section-title">
+        Минимальный стек<br />
+        <span class="gradient-text">максимальный результат</span>
+      </h2>
+      <p class="section-desc">
+        Этот набор — отражение реальной популярности по 
+        <a href="https://github.blog/news-insights/octoverse/octoverse-2025/" target="_blank" class="inline-link">GitHub Octoverse</a>, 
+        <a href="https://survey.stackoverflow.co/2024/" target="_blank" class="inline-link">Stack Overflow Survey</a> и 
+        <a href="https://2024.stateofjs.com/" target="_blank" class="inline-link">State of JS 2024</a>. 
+        И он работает на бесплатных тарифах.
+      </p>
+      <div class="stack__flow">
+        <a href="https://cursor.com" target="_blank" class="stack-step reveal">
+          <div class="stack-step__num">01</div>
+          <div class="stack-step__content">
+            <div class="stack-step__tools">
+              <span class="tool-badge tool-badge--cursor">Cursor</span>
+            </div>
+            <h3>ИИ-редактор</h3>
+            <p>Пишешь по-человечески — получаешь рабочий код</p>
+          </div>
+        </a>
+        <div class="stack-arrow reveal" data-delay="50">→</div>
+        <div class="stack-step reveal" data-delay="100">
+          <div class="stack-step__num">02</div>
+          <div class="stack-step__content">
+            <div class="stack-step__tools">
+              <a href="https://www.typescriptlang.org/" target="_blank" class="tool-badge tool-badge--ts">TypeScript</a>
+              <a href="https://react.dev/" target="_blank" class="tool-badge">React</a>
+            </div>
+            <h3>Язык + фреймворк</h3>
+            <p>#1 экосистема по всем опросам 2024–2025</p>
+          </div>
+        </div>
+        <div class="stack-arrow reveal" data-delay="150">→</div>
+        <div class="stack-step reveal" data-delay="200">
+          <div class="stack-step__num">03</div>
+          <div class="stack-step__content">
+            <div class="stack-step__tools">
+              <a href="https://supabase.com/pricing" target="_blank" class="tool-badge tool-badge--supa">Supabase</a>
+            </div>
+            <h3>База + авторизация</h3>
+            <p>База, auth, storage — бесплатно для прототипа</p>
+          </div>
+        </div>
+        <div class="stack-arrow reveal" data-delay="250">→</div>
+        <div class="stack-step reveal" data-delay="300">
+          <div class="stack-step__num">04</div>
+          <div class="stack-step__content">
+            <div class="stack-step__tools">
+              <a href="https://vercel.com/pricing" target="_blank" class="tool-badge tool-badge--vercel">Vercel</a>
+            </div>
+            <h3>Деплой</h3>
+            <p>Онлайн за минуты. Hobby план — бесплатно</p>
+          </div>
+        </div>
+      </div>
+      <div class="stack__note reveal">
+        <span class="stack__note-icon">💰</span>
+        Суммарная стоимость запуска MVP: <strong>$0 — $20/мес</strong>. 
+        Барьер публикации результата стал почти нулевым.
+      </div>
+    </div>
+  </section>
+
+  <!-- MONETIZE -->
+  <section class="monetize section" id="monetize">
+    <div class="container">
+      <div class="section-label">как это монетизируется (без магии)</div>
+      <h2 class="section-title">
+        Три устойчивых пути<br />
+        <span class="gradient-text">от идеи к деньгам</span>
+      </h2>
+      <div class="monetize__grid">
+        <div class="monetize-card reveal">
+          <div class="monetize-card__num">1</div>
+          <h3>Инструмент для конкретной боли</h3>
+          <p>
+            Калькулятор, учёт, планирование, отчёты, интеграции. 
+            Монетизация не «миллион пользователей», а 5–50 компаний по подписке.
+          </p>
+          <div class="monetize-card__example">→ $500–5 000/мес при узкой нише</div>
+        </div>
+        <div class="monetize-card reveal" data-delay="150">
+          <div class="monetize-card__num">2</div>
+          <h3>Автоматизация вокруг данных</h3>
+          <p>
+            Веб-панель + интеграции + уведомления. 
+            Сильна там, где есть регулярные операции и ответственность.
+          </p>
+          <div class="monetize-card__example">→ отчётность, заявки, маршрутизация</div>
+        </div>
+        <div class="monetize-card reveal" data-delay="300">
+          <div class="monetize-card__num">3</div>
+          <h3>B2B-сервис узкой компетенции</h3>
+          <p>
+            Конструктор документов, расчётов, проверок. 
+            Выигрывает инженерный мозг: формализовать правила, покрыть крайние случаи.
+          </p>
+          <div class="monetize-card__example">→ там, где важна надёжность и точность</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta section" id="cta">
+    <div class="container">
+      <div class="cta__inner">
+        <div class="cta__glow"></div>
+        <div class="section-label">начать сегодня вечером</div>
+        <h2 class="cta__title">
+          Твой первый продукт<br />
+          <span class="gradient-text">живёт в браузере уже завтра</span>
+        </h2>
+        <p class="cta__desc">
+          Открой <a href="https://cursor.com" target="_blank" class="inline-link inline-link--light">Cursor</a>. 
+          Опиши что хочешь построить. 
+          Задеплой на <a href="https://vercel.com" target="_blank" class="inline-link inline-link--light">Vercel</a>. 
+          Покажи другу. Это всё.
+        </p>
+        <div class="cta__steps">
+          <div class="cta-step">
+            <span class="cta-step__num">1</span>
+            <span>Скачай <a href="https://cursor.com" target="_blank" class="inline-link inline-link--light"><strong>Cursor</strong></a></span>
+          </div>
+          <div class="cta-step__line"></div>
+          <div class="cta-step">
+            <span class="cta-step__num">2</span>
+            <span>Опиши свою идею по-русски</span>
+          </div>
+          <div class="cta-step__line"></div>
+          <div class="cta-step">
+            <span class="cta-step__num">3</span>
+            <span>Итерируй, правь, добавляй</span>
+          </div>
+          <div class="cta-step__line"></div>
+          <div class="cta-step">
+            <span class="cta-step__num">4</span>
+            <span>Задеплой на <a href="https://vercel.com" target="_blank" class="inline-link inline-link--light"><strong>Vercel</strong></a></span>
+          </div>
+          <div class="cta-step__line"></div>
+          <div class="cta-step">
+            <span class="cta-step__num">5</span>
+            <span>Поделись ссылкой</span>
+          </div>
+        </div>
+        <div class="cta__links">
+          <a href="https://cursor.com" target="_blank" class="cta-btn cta-btn--primary">
+            Открыть Cursor →
+          </a>
+          <a href="https://cursor.com/pricing" target="_blank" class="cta-btn cta-btn--secondary">
+            Посмотреть тарифы Cursor →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <span class="gradient-text footer__logo">Vibe Coding</span>
+          <p>
+            <a href="https://www.collinsdictionary.com/woty" target="_blank" class="footer-link">Слово года Collins Dictionary 2025</a>.<br />
+            Придумано <a href="https://karpathy.ai" target="_blank" class="footer-link">Andrej Karpathy</a>, февраль 2025.
+          </p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__sources">
+            Источники:
+            <a href="https://survey.stackoverflow.co/2024/" target="_blank" class="footer-link">Stack Overflow Dev Survey</a> · 
+            <a href="https://github.blog/news-insights/octoverse/octoverse-2025/" target="_blank" class="footer-link">GitHub Octoverse 2025</a> · 
+            <a href="https://2024.stateofjs.com/" target="_blank" class="footer-link">State of JS 2024</a><br />
+            <a href="https://www.indiehackers.com/" target="_blank" class="footer-link">Indie Hackers</a> · 
+            <a href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm" target="_blank" class="footer-link">BLS.gov</a> · 
+            <a href="https://www.secondtalent.com/resources/vibe-coding-statistics/" target="_blank" class="footer-link">Second Talent</a> · 
+            <a href="https://www.innobu.com/vibecoding-dashboard/" target="_blank" class="footer-link">Innobu Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
